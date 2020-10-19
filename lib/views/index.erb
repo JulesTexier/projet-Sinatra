@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur la super app des potins</h1>
+    <p> La liste des potins arrive... En attendant, si tu souhaites créer un nouveau potin, clique que ce lien <a href="/gossips/new/">"Je crée un nouveau potin"</a> </p>
+    <p></p>
+  <h2> Voici la liste des potins </h2>
+  <% gossips.each_with_index do |gossip, index| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br/>
+          <a href="/gossips/<%= index + 1 %>">Lien vers le gossip</a>
+        </p>
+      <% end %>
+  </body>
+</html>
