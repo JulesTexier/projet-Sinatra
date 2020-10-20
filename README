@@ -1,0 +1,18 @@
+
+
+LES PAGES :
+1/ La page "index.erb" permet d'afficher une page d'accueil du site affichera tous les potins que nous avons en base.
+2/ La page "new_gossip.erb" permet ajouter un potin en base.
+3/ les pages "show.erb" et "edit.erb" permettent d'afficher et d'editer un potin.
+
+L'ARCHITECTURE : 
+Cette application créé sur le framework Sinatra est construite avec l'architecture MVC (router, controler, model)
+Les programmes controller et gossip.rb ont les rôles de controller et de model vers la BDD gossip.csv.
+Le programme config.ru permet de lancer le programme.
+
+LES GEMS :
+Les Gem nécessaires sont listées dans le documents Gemfile.
+
+LANCER LE PROGRAMME :
+execute la commande "rackup -p 4567"
+va sur l'url : http://localhost:4567/
